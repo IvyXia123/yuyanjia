@@ -1,0 +1,119 @@
+#loading,#loading .loader,#loading span {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+#loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+  	background: radial-gradient(#eeeeee, #7d8c8f);
+}
+
+#loading .loader {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+#loading section{
+	transform: scale(.6 , .6);
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#loading section span {
+	position: absolute;
+  	display: block;
+  	width: 0px;
+  	height:0px;
+  	border-radius: 50%;
+  	background: black;
+  	transform: translate(70px,70px);
+}
+#loading span:nth-child(1){
+	transform: translate(20px,70px);
+	animation: load .8s .7s infinite linear;
+}
+#loading span:nth-child(2){
+	transform: translate(34px,105px);
+	animation: load .8s .6s infinite linear;
+}
+#loading span:nth-child(3){
+	transform: translate(70px,120px);
+	animation: load .8s .5s infinite linear;
+}
+#loading span:nth-child(4){
+	transform: translate(104px,106px);
+	animation: load .8s .4s infinite linear;
+}
+#loading span:nth-child(5){
+	transform: translate(120px,70px);
+	animation: load .8s .3s infinite linear;
+}
+#loading span:nth-child(6){
+	transform: translate(106px,35px);
+	animation: load .8s .2s infinite linear;
+}
+#loading span:nth-child(7){
+	transform: translate(70px,20px);
+	animation: load .8s .1s infinite linear;
+}
+#loading span:nth-child(8){
+	transform: translate(34px,36px);
+	animation: load .8s -.1s infinite linear;
+}
+
+@keyframes load {
+	100%{opacity: .0;
+	 	width: 12px;
+  		height:12px;
+	 }
+	90%{opacity: .1;
+		width:11px;
+  		height:11px;
+	}
+	80%{opacity: .2;
+		width:10px;
+  		height:10px;
+	}
+	70%{opacity: .3;
+		width: 9px;
+  		height:9px;
+	}
+	60%{opacity: .4;
+		width: 8px;
+  		height:8px;
+	}
+	50%{opacity: .5;
+		width: 9px;
+  		height:9px;
+	}
+	40%{opacity: .6;
+		width: 10px;
+  		height:10px;
+	}
+	30%{opacity: .7;
+		width: 11px;
+  		height:11px;
+	}
+	20%{opacity: .8;
+		width: 12px;
+  		height:12px;
+	}
+	10%{opacity: .9;
+		width: 13px;
+  		height:13px;
+	}
+   0%{opacity: 1;
+   		width: 14px;
+  		height:14px;
+   }
+}

@@ -1,0 +1,44 @@
+@import url("base.css");
+.login_box{
+	width:4rem;
+	height:4.5rem;
+	padding: 0.2rem;
+	border-radius:0.1rem;	
+	background:rgba(255,255,255,0.6);
+    box-shadow: 0 0.2rem  0.9rem 0  #666;
+    overflow: hidden;
+}
+.form,.input,.button,#error_box,.logo{
+	width:100%;
+ 	margin:0 auto;
+}       
+.form{
+	border: 0.01rem solid #ccc;
+	border-radius: 0.02rem;
+}
+.login_box .input{
+	padding: 20px 10px;
+	font-size:0.2rem;
+	outline: none;       	
+	border-bottom:0.01rem solid #ccc;
+	border-radius: 0.02rem;
+	box-sizing: border-box;
+}       
+.button{
+	height:0.6rem;
+	margin-top:0.2rem;
+	font-size:0.2rem;
+	color: #fff;
+	background: #5bc9c9;
+	border-radius: 0.02rem;
+}
+.login_box .logo{
+	margin:0.4rem auto;
+}
+.login_box .logo img{
+	display: block;  
+	margin: 0 auto;     	
+}
+#error_box{
+	height: 0.3rem;
+}

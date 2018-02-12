@@ -1,0 +1,392 @@
+/*
+ 
+ * aside nav date input backgroundColor -- #345a71
+ * 
+ * 
+ * 
+ * */	
+ 
+html,body{
+	min-width: 1200px;
+	min-height: 600px;
+}
+header{
+	position: relative;
+	overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+	color:white;
+	background:#345a71;
+}
+header .title-logo{
+	float: left;
+	height: 100%;
+	padding-left: 20px;
+}
+.title-logo img{
+	width: 39px;
+	vertical-align: text-bottom;
+}
+.login{
+	padding-right:20px ;
+	font-size: 14px;
+}
+.login li{
+	padding-right:5px;
+	display: inline;
+}
+.login li:nth-of-type(1),
+.login li:nth-of-type(2),
+.login li:nth-of-type(4) a{
+	color: #dbfbff;
+}
+
+.login li a{
+	color:white;
+}
+.login li #userName:hover,
+.login li #Logout:hover{
+	color: #FFC107;
+}
+.magin-left{
+	margin-left:10px;
+	margin-bottom:5px;
+}
+/*------   aside date input */
+/* date query*/
+#date-query{
+	position: absolute;
+	display: none;
+	left: 170px;
+	width: 210px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	box-shadow: 9px 9px 14px -10px;
+	border-top: 2px solid #009f95;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	padding: 10px 5px;
+	box-sizing:border-box ;
+	z-index: 2;
+}
+#date-query:after{
+	position: absolute;
+    content: "";
+    border: 30px solid transparent;
+    border-right: 12px solid yellow;
+    top: -2px;
+    left: -42px;
+}
+.submenu{
+ 	position: relative;
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+hr{
+	position: relative;
+	top: 5px;
+	height: 1px;
+	background-color: lightskyblue;
+	margin-top: 3px;
+	margin-bottom: 8px;
+}
+.submit{
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	border-radius: 50%;
+	background-color: lightskyblue;
+	transform:translateX(72px) ;
+	margin-top: 17px;
+}
+.submenu input{
+	width: 99%;
+	height: 25px !important;
+	padding: 6px 10px 4px;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 5px;
+	border: none;
+}
+	.index-container{
+		width:100%;
+		height:100%;
+	}
+	/*************************LeftBox strat***************************************/
+	.index-leftBox{
+		width:170px;
+		float:left;
+		height: calc(100% - 50px);
+		box-sizing:content-box;
+		border:1px solid #C0C0C0;
+		box-sizing:border-box;
+		background-color: #659da4;
+	}
+	.index-leftBox li{
+		position: relative;
+		line-height:60px;
+		color: #fff;
+		font-size: 14px;
+	}
+	.index-leftBox span{
+		display: block;
+		width: 100%;
+		line-height: 60px;
+		text-indent: 50px;
+		cursor: pointer;
+	}
+	.index-leftBox .icon{
+		position: absolute;
+		left: 20px;
+		top: 22px;
+		transform: scale(1.4);
+	}
+	.index-leftBox li:nth-of-type(1) .icon,
+	.index-leftBox li:nth-of-type(4) .icon{
+		top: 23px;
+		transform: scale(1.7);
+	}
+	
+	.index-leftBox .mainmenu>li:hover{
+		background:#009F95;
+	}
+	li.checked{
+		background:#009F95;
+	}
+	.index-leftBox .submenu-01 .time input{
+		display: inline-block;
+		width:90px;
+		border-radius:2px;
+		padding-left:10px;
+		border:1px solid #CCCCCC; 
+		line-height:20px;
+	}
+	.index-leftBox .submenu-01 .time input,.index-leftBox .submenu-01 .time span{
+		margin-top:10px;
+	}
+	/******************************************LeftBox end************************************************/
+	/******************************************RightBox strat*******************************************/
+	.index-rightBox{
+		position: relative;
+		width:calc(100% - 170px);
+		height:calc(100% - 50px);
+		padding: 10px;
+		float:left;
+		box-sizing:border-box;   
+		background-color: #f2f2f2;
+	}
+	.index-rightBox .content-boxItem{
+		position: relative;
+		float: left;
+		height: 100%;
+		border-radius:8px;
+	}
+	.index-rightBox .content-leftBox{
+		width: calc(100% - 350px);
+		background-color: #345a71;
+	}
+/*
+ ---------  current position*/	
+.index-rightBox .currentPosition{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 170px;
+	height: 160px;
+	font-size: 15px;
+    padding:18px 25px;
+    color: yellow;
+	z-index: 1;
+}
+.currentPosition li{
+	padding:5px;
+}
+/*
+ ---------  echarts*/
+.index-rightBox .content-rightBox{
+	width: 340px;
+	margin-left: 10px;
+	clear: right;
+	overflow: auto;
+}
+.content-rightBox .echart{
+	width: 100%;
+	height:calc(50% - 5px);
+	border-radius: 8px;
+	background-color:#fff !important;
+}
+.content-rightBox .echart:first-child{
+	margin-bottom: 10px;
+}
+.content-rightBox .echart:last-child{
+	margin-top: 10px;
+}
+/*
+ ---------   */
+.index-rightBox .mainmenu_01{
+	width:16.6%;
+	margin:0 auto;
+	position: relative;
+}
+.index-rightBox .mainmenu_01>li span{
+	color:#000000;
+}
+.index-rightBox .mainmenu_01>li{
+	text-align: center;
+}
+.index-rightBox .mainmenu_01>li:hover{
+	color:white;
+	background:#009F95;
+}
+.index-rightBox .mainmenu_01>li:hover span{
+	color:white;
+	}
+.index-rightBox .submenu{
+	position:absolute;
+	border: none;
+	box-shadow:  0px 2px 7px -1px;
+}
+	.index-nav{
+   		border-bottom: 1px solid #C0C0C0;
+  	 	z-index: 9999;
+	}
+	.index-rightBox .icon {
+	    position:relative;  
+	    left:-2px;
+	    top:6px;
+	}
+	.index-rightBox  .sbumit{
+		background:#009F95;
+		color:white;
+		border:1px solid #CCCCCC;
+		height: 40px;
+		border-radius:30px;
+		width:40px;
+		cursor:pointer;
+	}
+	.index-rightBox .totalTip{
+		position: absolute;
+		top: 70px;
+		left: auto;
+		right: 140px;
+		color: rgba(255,255,255,.2);
+		transform: scaleX(14) scaleY(10);
+	}
+/******************************section部分  start*******************/
+#content{
+	position: relative;
+	width:100%;
+	height:100%;
+	margin-top:2px;
+    }
+.site-items{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#content .item{
+	position: absolute;
+	width: 0;
+	height: 0;
+	padding:0px;
+	border-radius: 50%;
+	border-width: 2px;
+	border-style: solid;
+}
+.Withdraw{
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	width: 200px;
+	padding: 20px 0px;
+	color: #ffee5b;
+}
+.Withdraw h5,
+.Withdraw h6{
+	padding: 5px 0;
+	text-align: center;
+	font-size: 15px !important;
+	background-color: #345a71;
+}
+.item:nth-child(1):after{
+	padding: 45px;
+	margin-top: -45px;
+	margin-left: -45px;
+}
+.item i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%,-100%);
+	font-size: 14px;
+	opacity: 0;
+}
+.addSpan i,
+.addSpan span{
+	position: absolute;
+	font-size:14px;
+}
+.addSpan i{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.addSpan:nth-of-type(1) i{
+	transform: translate(-50%,-10%);
+}
+.addSpan span{
+	white-space: nowrap;
+}
+.addSpan:nth-of-type(1) span{
+	transform: translate(0%,-50%);
+}
+/******************************section部分  end*******************/
+#overText{
+	position: absolute;
+	display: none;
+	z-index: 2;
+	top: 30px;
+	padding: 10px 20px; 
+	font-size: 14px;
+	border-radius: 5px;
+	color: yellow;
+	border:2px solid #fff;
+	box-shadow: 0 0 40px 2px #fff inset;
+}
+#overText:after{
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 0px;
+	top: -24px;
+	left: 1px;
+	border: 12px solid transparent;
+	border-bottom-color:#fff ;
+}
+#overText:before{
+	position: absolute;
+	z-index: 1;
+	content: "";
+	width: 0px;
+	height: 0px;
+	top: -19px;
+	left: 3px;
+	border: 10px solid transparent;
+	border-bottom-color:#b6c4cc ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
